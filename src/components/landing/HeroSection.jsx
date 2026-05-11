@@ -1,9 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ArrowRight, Shield, Home, Users, Calendar } from 'lucide-react';
-
-const MERIDA_IMG = "https://images.unsplash.com/photo-1518638150340-f706e86654de?w=900&q=80&fit=crop";
+import { ArrowRight } from 'lucide-react';
 
 export default function HeroSection() {
   const scrollToForm = () => {
@@ -54,28 +52,12 @@ export default function HeroSection() {
 
           {/* Right — 40% */}
           <div className="lg:col-span-2">
-            <div className="bg-card rounded-xl border border-border overflow-hidden shadow-sm">
+            <div className="rounded-xl overflow-hidden shadow-sm">
               <img
-                src={MERIDA_IMG}
-                alt="Northern Mérida hospital district — Altabrisa neighborhood near Star Médica and Faro del Mayab hospitals"
-                className="w-full h-64 object-cover"
+                src="https://media.base44.com/images/public/6a0254f06a505803a56ab728/d322598d8_expatsinmerida.png"
+                alt="Expats enjoying Paseo de Montejo in Mérida, Yucatán — international patients relaxing in the city"
+                className="w-full h-80 object-cover"
               />
-              <div className="p-5">
-                <div className="flex flex-wrap gap-2">
-                  <span className="inline-flex items-center gap-1.5 text-xs bg-primary/5 text-primary border border-primary/15 rounded-full px-3 py-1">
-                    <Shield className="w-3 h-3" /> JCI-accredited hospitals
-                  </span>
-                  <span className="inline-flex items-center gap-1.5 text-xs bg-primary/5 text-primary border border-primary/15 rounded-full px-3 py-1">
-                    <Users className="w-3 h-3" /> Bilingual care teams
-                  </span>
-                  <span className="inline-flex items-center gap-1.5 text-xs bg-primary/5 text-primary border border-primary/15 rounded-full px-3 py-1">
-                    <Home className="w-3 h-3" /> Recovery-certified housing
-                  </span>
-                  <span className="inline-flex items-center gap-1.5 text-xs bg-primary/5 text-primary border border-primary/15 rounded-full px-3 py-1">
-                    <Calendar className="w-3 h-3" /> May 2026
-                  </span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
