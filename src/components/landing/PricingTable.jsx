@@ -43,13 +43,11 @@ export default function PricingTable() {
       </div>
 
       <p className="mt-4 text-xs text-muted-foreground leading-relaxed">
-        Sources:{' '}
-        <a href="https://bookimed.com" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Bookimed (May 2026)</a>
-        {' · '}
-        <a href="https://dentavacation.com" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Dentavacation (2026)</a>
-        {' · '}
-        <a href="https://renewbariatrics.com" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Renew Bariatrics (2026)</a>
-        . Prices are approximate ranges. MXN equivalents at 1 USD ≈ $17.50 MXN.
+        Pricing sources: ⁹<a href="https://bookimed.com" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Bookimed</a>. Procedure Cost Data Mexico, May 2026. bookimed.com
+        {' · '}¹⁰<a href="https://dentavacation.com" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Dentavacation</a>. Dental Implants in Mérida Mexico. dentavacation.com
+        {' · '}¹¹<a href="https://renewbariatrics.com" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Renew Bariatrics</a>. Recovery Houses in Mexico. renewbariatrics.com
+        {' · '}¹²<a href="https://medicaltourismco.com" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">Medical Tourism Co.</a> Dental Work Mérida Mexico. medicaltourismco.com.
+        {' '}All prices are approximate patient-facing ranges and may vary by surgeon, facility, and patient profile.
       </p>
     </section>
   );

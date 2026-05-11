@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle2, MapPin, ExternalLink } from 'lucide-react';
+import { Cite } from '@/components/landing/SourcesReference';
 
 const CHECKLIST = [
   'Ground floor or elevator building (non-negotiable post-surgery)',
@@ -43,7 +44,7 @@ const TOOLS = [
     name: 'AirDNA',
     color: 'border-yellow-300 bg-yellow-50',
     labelColor: 'text-yellow-700 bg-yellow-100',
-    what: 'Shows occupancy rates, average nightly prices, seasonal demand, and host revenue data for any neighborhood in Mérida. Use it to identify which areas have the highest availability during your travel window and negotiate better rates with hosts on longer stays.',
+    what: <>Shows occupancy rates, average nightly prices, seasonal demand, and host revenue data for any neighborhood in Mérida. Use it to identify which areas have the highest availability during your travel window and negotiate better rates with hosts on longer stays.<Cite n={16} /></>,
     best: 'Finding the right neighborhood + price benchmark before searching Airbnb directly.',
     url: 'airdna.co',
     href: 'https://airdna.co',
@@ -52,7 +53,7 @@ const TOOLS = [
     name: 'Inside Airbnb',
     color: 'border-blue-200 bg-blue-50',
     labelColor: 'text-blue-700 bg-blue-100',
-    what: 'Open-data project that scrapes and publishes Airbnb listing data for major cities, including availability calendars, review counts, and host activity. Shows you which listings are genuinely available vs. ghost-listed.',
+    what: <>Open-data project that scrapes and publishes Airbnb listing data for major cities, including availability calendars, review counts, and host activity. Shows you which listings are genuinely available vs. ghost-listed.<Cite n={17} /></>,
     best: 'Vetting whether a listing is actively managed and getting honest review counts before booking.',
     url: 'insideairbnb.com',
     href: 'http://insideairbnb.com',

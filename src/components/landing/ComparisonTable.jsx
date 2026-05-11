@@ -1,21 +1,25 @@
 import React from 'react';
 import { Check, Minus, X } from 'lucide-react';
+import { Cite } from '@/components/landing/SourcesReference';
 
 const ROWS = [
   {
     label: 'Direct flights from US/Canada',
+    cite: 13,
     merida: { val: 'check', note: 'Miami, Houston, Dallas, Toronto direct' },
     tijuana: { val: 'check', note: 'San Diego land border + Tijuana airport' },
     cancun: { val: 'check', note: 'Most US/Canadian hubs direct' },
   },
   {
     label: 'JCI-accredited hospitals',
+    cite: 6,
     merida: { val: 'check', note: '2 JCI + 2 US-affiliated' },
     tijuana: { val: 'partial', note: '1 JCI-accredited' },
     cancun: { val: 'partial', note: '1 JCI-accredited' },
   },
   {
     label: 'Recovery house ecosystem',
+    cite: 11,
     merida: { val: 'check', note: 'RecoverMerida — purpose-built' },
     tijuana: { val: 'none', note: 'No dedicated recovery housing' },
     cancun: { val: 'none', note: 'Hotel-based only' },
@@ -63,7 +67,7 @@ export default function ComparisonTable() {
           <tbody>
             {ROWS.map((row, i) => (
               <tr key={row.label} className={`border-b border-border ${i % 2 === 0 ? 'bg-muted/30' : ''}`}>
-                <td className="py-3.5 pr-4 font-medium text-foreground">{row.label}</td>
+                <td className="py-3.5 pr-4 font-medium text-foreground">{row.label}{row.cite ? <Cite n={row.cite} /> : null}</td>
                 {['merida', 'tijuana', 'cancun'].map((city) => (
                   <td key={city} className="py-3.5 px-4">
                     <div className="flex items-start gap-2">

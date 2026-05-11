@@ -1,5 +1,6 @@
 import React from 'react';
 import { Home, Award, Clock, UserCheck, Plane, MapPin } from 'lucide-react';
+import { Cite } from '@/components/landing/SourcesReference';
 
 const TIPS = [
   {
@@ -25,7 +26,7 @@ const TIPS = [
   {
     icon: Plane,
     title: 'Flying home too early is the most common mistake',
-    text: 'General rule: 7–10 days for dental and minor procedures, 10–14 days for bariatric, 14–21 days for orthopedic. Flying before surgical clearance risks DVT and wound complications. Get written travel clearance from your surgeon before booking your return flight.',
+    text: <>General rule: 7–10 days for dental and minor procedures, 10–14 days for bariatric, 14–21 days for orthopedic.<Cite n={14} /><Cite n={15} /> Flying before surgical clearance risks DVT and wound complications. Get written travel clearance from your surgeon before booking your return flight.</>,
   },
   {
     icon: MapPin,

@@ -17,6 +17,7 @@ import TrustpilotPlaceholder from '../components/landing/TrustpilotPlaceholder';
 import FAQAccordion from '../components/landing/FAQAccordion';
 import RelatedArticles from '../components/landing/RelatedArticles';
 import AuthorBio from '../components/landing/AuthorBio';
+import SourcesReference from '../components/landing/SourcesReference';
 import Footer from '../components/landing/Footer';
 import WhatsAppFloat from '../components/landing/WhatsAppFloat';
 
@@ -84,6 +85,9 @@ export default function Landing() {
 
         <hr className="border-border" />
         <AuthorBio />
+
+        <hr className="border-border" />
+        <SourcesReference />
       </div>
 
       <Footer />

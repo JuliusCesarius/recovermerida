@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight } from 'lucide-react';
+import { Cite } from '@/components/landing/SourcesReference';
 
 export default function HeroSection() {
   const scrollToForm = () => {
@@ -30,7 +31,7 @@ export default function HeroSection() {
             </p>
 
             <p className="text-[17px] md:text-[18px] leading-relaxed font-medium text-foreground border-l-4 border-primary pl-4">
-              Mérida's four JCI-accredited hospitals offer the same procedures as US facilities at 30–70% less, with zero waiting lists and bilingual care teams — but the recovery side has been largely uncoordinated, until now. Here's everything you need to plan it right.
+              Mérida's four JCI-accredited hospitals offer the same procedures as US facilities at 30–70% less<Cite n={1} /><Cite n={2} />, with zero waiting lists and bilingual care teams — but the recovery side has been largely uncoordinated, until now. Here's everything you need to plan it right.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
