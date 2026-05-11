@@ -83,7 +83,82 @@ export default function RecoveryHousingSection() {
         </ul>
       </div>
 
-      {/* Subsection B — Neighborhoods */}
+      {/* Subsection B — Featured Listings */}
+      <h3 className="text-lg font-semibold text-foreground mb-2">Where we actually send our patients</h3>
+      <p className="text-sm text-muted-foreground mb-5">
+        These two properties are operated by RecoverMérida partners — vetted for post-surgical stays, close to the hospital district, and set up for patients recovering alone or with a companion.
+      </p>
+      <div className="space-y-4 mb-10">
+        {/* Listing 1 */}
+        <a
+          href="https://www.airbnb.mx/rooms/52459738"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col sm:flex-row gap-0 border border-border rounded-xl overflow-hidden bg-card hover:border-primary/40 hover:shadow-md transition-all group"
+        >
+          <img
+            src="https://media.base44.com/images/public/6a0254f06a505803a56ab728/c0195303f_generated_image.png"
+            alt="Recovery house Mérida — Casa Altabrisa, ground floor, pool, 3 bedrooms"
+            className="w-full sm:w-52 h-44 sm:h-auto object-cover shrink-0"
+          />
+          <div className="p-5 flex flex-col justify-between gap-3">
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-primary bg-primary/8 px-2 py-0.5 rounded">RecoverMérida Partner</span>
+              </div>
+              <h4 className="font-semibold text-foreground text-[15px] leading-snug group-hover:text-primary transition-colors">
+                Casa Altabrisa — Ground-floor recovery suite, private pool, 3 BR
+              </h4>
+              <p className="text-sm text-muted-foreground mt-1.5 leading-relaxed">
+                5 min from Star Médica. Ground floor, step-free entry, full kitchen, blackout curtains, A/C in every room. Hosts speak English and are experienced with post-op guests.
+              </p>
+            </div>
+            <div className="flex items-center gap-3 text-xs text-muted-foreground">
+              <span className="font-semibold text-primary">~$75 USD/night</span>
+              <span>·</span>
+              <span>Altabrisa, Mérida</span>
+              <span>·</span>
+              <span className="inline-flex items-center gap-1 text-primary font-medium">View on Airbnb <ExternalLink className="w-3 h-3" /></span>
+            </div>
+          </div>
+        </a>
+
+        {/* Listing 2 */}
+        <a
+          href="https://www.airbnb.mx/rooms/856773305965825817"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col sm:flex-row gap-0 border border-border rounded-xl overflow-hidden bg-card hover:border-primary/40 hover:shadow-md transition-all group"
+        >
+          <img
+            src="https://media.base44.com/images/public/6a0254f06a505803a56ab728/94d55b509_generated_image.png"
+            alt="Recovery apartment Mérida — modern open plan, high ceilings, 2 bedrooms"
+            className="w-full sm:w-52 h-44 sm:h-auto object-cover shrink-0"
+          />
+          <div className="p-5 flex flex-col justify-between gap-3">
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-primary bg-primary/8 px-2 py-0.5 rounded">RecoverMérida Partner</span>
+              </div>
+              <h4 className="font-semibold text-foreground text-[15px] leading-snug group-hover:text-primary transition-colors">
+                Modern apartment — Temozón Norte, 2 BR, pool, elevator building
+              </h4>
+              <p className="text-sm text-muted-foreground mt-1.5 leading-relaxed">
+                Adjacent to Faro del Mayab (CHRISTUS Muguerza). Elevator access, private terrace, high-speed Wi-Fi for telehealth follow-ups. Ideal for longer 14–21 day orthopedic or bariatric stays.
+              </p>
+            </div>
+            <div className="flex items-center gap-3 text-xs text-muted-foreground">
+              <span className="font-semibold text-primary">~$65 USD/night</span>
+              <span>·</span>
+              <span>Temozón Norte, Mérida</span>
+              <span>·</span>
+              <span className="inline-flex items-center gap-1 text-primary font-medium">View on Airbnb <ExternalLink className="w-3 h-3" /></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      {/* Subsection C — Neighborhoods */}
       <h3 className="text-lg font-semibold text-foreground mb-4">Recommended Airbnb neighborhoods in Mérida</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
         {NEIGHBORHOODS.map(({ name, why, best, price }) => (
