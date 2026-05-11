@@ -23,13 +23,13 @@ export default function AuthorBio() {
             </p>
             <div className="flex flex-wrap gap-4 text-sm">
               <a
-                href="https://linkedin.com/in/julioavila"
+                href="https://www.linkedin.com/in/jules-avila-74b72469/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-primary hover:underline underline-offset-2"
               >
                 <ExternalLink className="w-3.5 h-3.5" />
-                linkedin.com/in/julioavila
+                linkedin.com
               </a>
               <a
                 href="https://julesavila.com"
