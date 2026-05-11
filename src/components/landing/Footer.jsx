@@ -7,31 +7,40 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div className="space-y-3">
             <p className="text-lg font-medium text-foreground tracking-tight">
-              Recover<span className="text-primary">Merida</span>
+              Recover<span className="text-primary">Mérida</span>
             </p>
             <p className="text-sm text-muted-foreground max-w-xs">
               Mérida's recovery ecosystem for international patients.
             </p>
-            <div className="flex gap-4 text-sm text-primary">
+            <div className="flex flex-wrap gap-4 text-sm text-primary">
               <a href="https://wa.me/529991234567" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-2">
                 WhatsApp
               </a>
               <a href="mailto:hello@recovermerida.com" className="hover:underline underline-offset-2">
                 hello@recovermerida.com
               </a>
+              <a href="https://recovermerida.com" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-2">
+                recovermerida.com
+              </a>
+              <a href="https://recovermerida.mx" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-2">
+                recovermerida.mx
+              </a>
             </div>
           </div>
 
           <div className="text-sm text-muted-foreground space-y-1 md:text-right">
             <p>Last updated: May 2026</p>
-            <p>© 2026 RecoverMerida</p>
+            <p>© 2026 RecoverMérida</p>
+            <a href="https://julesavila.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline underline-offset-2 block">
+              julesavila.com
+            </a>
           </div>
         </div>
 
         <hr className="my-8 border-border" />
 
         <p className="text-xs text-muted-foreground leading-relaxed">
-          RecoverMerida coordinates recovery logistics and does not provide medical diagnosis or treatment. All medical decisions should be made in consultation with qualified healthcare professionals. Procedure pricing is approximate and may vary by hospital and individual case.
+          RecoverMérida coordinates recovery logistics and does not provide medical diagnosis or treatment. All medical decisions should be made in consultation with qualified healthcare professionals. Procedure pricing is approximate and may vary by hospital and individual case.
         </p>
       </div>
     </footer>

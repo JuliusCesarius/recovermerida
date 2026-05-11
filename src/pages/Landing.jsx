@@ -3,19 +3,20 @@ import StickyNav from '../components/landing/StickyNav';
 import HeroSection from '../components/landing/HeroSection';
 import TableOfContents from '../components/landing/TableOfContents';
 import PainValidators from '../components/landing/PainValidators';
+import TipsSection from '../components/landing/TipsSection';
 import MethodologyBlock from '../components/landing/MethodologyBlock';
-import MarketDataCallout from '../components/landing/MarketDataCallout';
 import HospitalGuide from '../components/landing/HospitalGuide';
 import PricingTable from '../components/landing/PricingTable';
 import ComparisonTable from '../components/landing/ComparisonTable';
+import RecoveryHousingSection from '../components/landing/RecoveryHousingSection';
 import InsuranceSection from '../components/landing/InsuranceSection';
 import RecoveryTimeline from '../components/landing/RecoveryTimeline';
-import RecoveryServices from '../components/landing/RecoveryServices';
+import MarketDataCallout from '../components/landing/MarketDataCallout';
 import LeadCaptureForm from '../components/landing/LeadCaptureForm';
 import TrustpilotPlaceholder from '../components/landing/TrustpilotPlaceholder';
 import FAQAccordion from '../components/landing/FAQAccordion';
-import AuthorBio from '../components/landing/AuthorBio';
 import RelatedArticles from '../components/landing/RelatedArticles';
+import AuthorBio from '../components/landing/AuthorBio';
 import Footer from '../components/landing/Footer';
 import WhatsAppFloat from '../components/landing/WhatsAppFloat';
 
@@ -43,10 +44,10 @@ export default function Landing() {
         <PainValidators />
 
         <hr className="border-border" />
-        <MethodologyBlock />
+        <TipsSection />
 
         <hr className="border-border" />
-        <MarketDataCallout />
+        <MethodologyBlock />
 
         <hr className="border-border" />
         <HospitalGuide />
@@ -58,13 +59,16 @@ export default function Landing() {
         <ComparisonTable />
 
         <hr className="border-border" />
+        <RecoveryHousingSection />
+
+        <hr className="border-border" />
         <InsuranceSection />
 
         <hr className="border-border" />
         <RecoveryTimeline />
 
         <hr className="border-border" />
-        <RecoveryServices />
+        <MarketDataCallout />
 
         <hr className="border-border" />
         <LeadCaptureForm />
@@ -76,10 +80,10 @@ export default function Landing() {
         <FAQAccordion />
 
         <hr className="border-border" />
-        <AuthorBio />
+        <RelatedArticles />
 
         <hr className="border-border" />
-        <RelatedArticles />
+        <AuthorBio />
       </div>
 
       <Footer />

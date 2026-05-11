@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ArrowRight, Shield, Award, MapPin } from 'lucide-react';
+import { ArrowRight, Shield, Home, Users, Calendar } from 'lucide-react';
 
-const FOUNDER_IMG = "https://media.base44.com/images/public/6a0254f06a505803a56ab728/5bbd5e367_generated_f49cd9b8.png";
+const MERIDA_IMG = "https://images.unsplash.com/photo-1518638150340-f706e86654de?w=900&q=80&fit=crop";
 
 export default function HeroSection() {
   const scrollToForm = () => {
@@ -27,12 +27,12 @@ export default function HeroSection() {
               <span className="text-primary">Recover like family.</span>
             </h1>
 
-            <p className="text-sm text-muted-foreground">
-              Last updated: May 11, 2026 · 10 min read
+            <p className="text-sm text-muted-foreground italic">
+              The honest, no-fluff guide to medical tourism and recovery in Mérida — May 2026
             </p>
 
-            <p className="text-[17px] md:text-[18px] leading-relaxed font-medium text-foreground">
-              Mérida's four JCI-accredited hospitals offer the same procedures as US facilities at 30–70% less, with zero waiting lists — and now a fully coordinated recovery system for international patients, managed by a Mérida native.
+            <p className="text-[17px] md:text-[18px] leading-relaxed font-medium text-foreground border-l-4 border-primary pl-4">
+              Mérida's four JCI-accredited hospitals offer the same procedures as US facilities at 30–70% less, with zero waiting lists and bilingual care teams — but the recovery side has been largely uncoordinated, until now. Here's everything you need to plan it right.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
@@ -56,24 +56,23 @@ export default function HeroSection() {
           <div className="lg:col-span-2">
             <div className="bg-card rounded-xl border border-border overflow-hidden shadow-sm">
               <img
-                src={FOUNDER_IMG}
-                alt="Jules Ávila, CEO iluk.ai, 20-year Mérida resident and founder of RecoverMerida recovery coordination"
-                className="w-full h-64 object-cover object-top"
+                src={MERIDA_IMG}
+                alt="Northern Mérida hospital district — Altabrisa neighborhood near Star Médica and Faro del Mayab hospitals"
+                className="w-full h-64 object-cover"
               />
-              <div className="p-5 space-y-3">
-                <div>
-                  <p className="font-medium text-foreground">Jules Ávila</p>
-                  <p className="text-sm text-muted-foreground">CEO iluk.ai · 20 years in Mérida · 2 recovery properties</p>
-                </div>
+              <div className="p-5">
                 <div className="flex flex-wrap gap-2">
                   <span className="inline-flex items-center gap-1.5 text-xs bg-primary/5 text-primary border border-primary/15 rounded-full px-3 py-1">
                     <Shield className="w-3 h-3" /> JCI-accredited hospitals
                   </span>
                   <span className="inline-flex items-center gap-1.5 text-xs bg-primary/5 text-primary border border-primary/15 rounded-full px-3 py-1">
-                    <Award className="w-3 h-3" /> Canadian Healthcare Council
+                    <Users className="w-3 h-3" /> Bilingual care teams
                   </span>
                   <span className="inline-flex items-center gap-1.5 text-xs bg-primary/5 text-primary border border-primary/15 rounded-full px-3 py-1">
-                    <MapPin className="w-3 h-3" /> Mérida native
+                    <Home className="w-3 h-3" /> Recovery-certified housing
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 text-xs bg-primary/5 text-primary border border-primary/15 rounded-full px-3 py-1">
+                    <Calendar className="w-3 h-3" /> May 2026
                   </span>
                 </div>
               </div>
@@ -83,7 +82,7 @@ export default function HeroSection() {
 
         {/* Byline bar */}
         <div className="mt-10 pt-6 border-t border-border flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-          <span>By <strong className="text-foreground">Jules Ávila</strong> · May 11, 2026 · 10 min read</span>
+          <span>RecoverMerida Editorial · May 11, 2026 · 10 min read</span>
           <div className="flex items-center gap-2 ml-auto">
             {['Facebook', 'X', 'LinkedIn', 'WhatsApp'].map((platform) => (
               <button
