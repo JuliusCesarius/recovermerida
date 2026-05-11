@@ -1,7 +1,7 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
 
-const FOUNDER_IMG = 'https://media.base44.com/images/public/6a0254f06a505803a56ab728/5bbd5e367_generated_f49cd9b8.png';
+const FOUNDER_IMG = 'https://media.base44.com/images/public/6a0254f06a505803a56ab728/e930f2a98_image.png';
 
 export default function AuthorBio() {
   return (
@@ -16,7 +16,7 @@ export default function AuthorBio() {
           />
           <div className="space-y-4">
             <p className="text-[15px] text-foreground leading-relaxed">
-              RecoverMérida was built by Jules Ávila — a lifelong Meridano, CEO of{' '}
+              RecoverMérida was founded by Jules Ávila — a lifelong Meridano, CEO of{' '}
               <a href="https://iluk.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline underline-offset-2">iluk.ai</a>,
               and operator of two recovery properties in northern Mérida. After 20 years watching international patients navigate Mérida's healthcare system without a coordination layer, he decided to build one. If you want to learn more about his work or reach out directly, visit{' '}
               <a href="https://julesavila.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline underline-offset-2">julesavila.com</a>.
