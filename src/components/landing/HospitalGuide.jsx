@@ -28,7 +28,7 @@ const HOSPITALS = [
   },
   {
     name: 'Clínica de Mérida',
-    image: 'https://media.base44.com/images/public/6a0254f06a505803a56ab728/7aa16ecfc_generated_c1bc23b4.png',
+    image: 'https://media.base44.com/images/public/6a0254f06a505803a56ab728/3ca603c2c_CleanShot2026-05-12at31610.png',
     badges: ['Mercy Hospital Miami Affiliate'],
     badgeCites: [null],
     distinction: 'English-speaking staff. Affiliated with Mercy Hospital Miami.',
