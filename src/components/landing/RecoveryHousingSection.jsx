@@ -103,9 +103,6 @@ export default function RecoveryHousingSection() {
           />
           <div className="p-5 flex flex-col justify-between gap-3">
             <div>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-primary bg-primary/8 px-2 py-0.5 rounded">RecoverMérida Partner</span>
-              </div>
               <h4 className="font-semibold text-foreground text-[15px] leading-snug group-hover:text-primary transition-colors">
                 Bright recovery apartment — Mérida, open-plan living + full kitchenette, A/C
               </h4>
