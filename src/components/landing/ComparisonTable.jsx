@@ -48,10 +48,10 @@ export default function ComparisonTable() {
   return (
     <section id="merida-vs-alternatives" className="py-12">
       <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
-        Mérida vs Tijuana vs Cancún for surgery (2026)
+        Is Mérida better than Tijuana or Cancún for medical tourism?
       </h2>
       <p className="text-[17px] leading-relaxed font-medium text-foreground mb-8">
-        All three cities offer medical tourism, but they differ sharply on recovery infrastructure, flight access, and post-op coordination.
+        Mérida leads on recovery infrastructure and accreditation depth — it is the only city of the three with two distinct international certification standards (JCI and Canadian Healthcare Council) and purpose-built recovery housing for surgical patients.
       </p>
 
       <div className="overflow-x-auto -mx-6 px-6">

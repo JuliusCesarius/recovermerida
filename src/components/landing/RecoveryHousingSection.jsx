@@ -64,7 +64,7 @@ export default function RecoveryHousingSection() {
   return (
     <section className="py-12" id="recovery-housing">
       <h2 className="text-2xl font-bold text-foreground mb-2">
-        Where to stay for recovery in Mérida — Airbnb options and what to look for
+        Where should I stay in Mérida for post-surgical recovery?
       </h2>
       <p className="text-[16px] leading-relaxed font-medium text-foreground mb-8 border-l-4 border-primary pl-4">
         No dedicated recovery hotels exist in Mérida yet. The best option for most patients is a vetted Airbnb in the hospital district — here's how to find one and what to look for.

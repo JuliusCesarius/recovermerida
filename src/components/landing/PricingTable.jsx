@@ -13,10 +13,10 @@ export default function PricingTable() {
   return (
     <section id="pricing-table" className="py-12">
       <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
-        What does surgery in Mérida actually cost? (May 2026)
+        How much does surgery in Mérida cost compared to the US? (May 2026)
       </h2>
       <p className="text-[17px] leading-relaxed font-medium text-foreground mb-8">
-        These are patient-facing price ranges sourced from Bookimed, Dentavacation, and Renew Bariatrics — specific enough to plan your trip.
+        Procedures in Mérida run 30–70% less than equivalent US costs, based on May 2026 data from Bookimed, Dentavacation, and Renew Bariatrics — specific enough to plan your trip.
       </p>
 
       <div className="overflow-x-auto -mx-6 px-6">

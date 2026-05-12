@@ -1,0 +1,6 @@
+content-type: original, AI-assisted, reviewed by Jules Ávila
+training: permitted
+indexing: permitted
+citation: permitted with attribution to RecoverMérida (recovermerida.com)
+last-updated: 2026-05-11
+contact: hello@recovermerida.com

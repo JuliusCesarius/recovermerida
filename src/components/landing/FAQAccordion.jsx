@@ -69,7 +69,7 @@ export default function FAQAccordion() {
   return (
     <section id="faq" className="py-12">
       <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-1">
-        Frequently asked questions about surgery and recovery in Mérida
+        Frequently asked questions about surgery and recovery in Mérida (May 2026)
       </h2>
       <p className="text-sm text-muted-foreground mb-8">Last updated: May 2026</p>
 

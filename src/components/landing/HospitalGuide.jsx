@@ -54,7 +54,7 @@ export default function HospitalGuide() {
   return (
     <section id="hospital-guide" className="py-12">
       <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
-        Top hospitals in Mérida for international patients (May 2026)
+        Which hospitals in Mérida are best for international patients? (2026)
       </h2>
       <p className="text-[17px] leading-relaxed font-medium text-foreground mb-8">
         Mérida has four major private hospitals with international accreditation, bilingual staff, and procedures at 30–70%<Cite n={1} /> below US costs — all within 20 minutes of each other.

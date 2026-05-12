@@ -17,7 +17,7 @@ export default function InsuranceSection() {
         Can I use my US or Canadian insurance for surgery in Mérida?
       </h2>
       <p className="text-[17px] leading-relaxed font-medium text-foreground mb-6">
-        Several major US and Canadian insurance carriers are accepted at Mérida's top hospitals through the Amexcare international billing partnership.
+        Yes — several major US and Canadian insurance carriers are accepted at Star Médica and Faro del Mayab through the Amexcare international billing partnership, which bridges US and Canadian insurance systems with Mexican hospitals.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">

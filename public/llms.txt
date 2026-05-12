@@ -1,0 +1,24 @@
+# RecoverMérida — llms.txt
+# Standard: https://llmstxt.org
+# Purpose: Tells AI language models which pages to read and which to skip.
+
+site: RecoverMérida
+description: The 2026 Surgery + Recovery Guide for international patients in Mérida, Yucatán, Mexico. Covers JCI-accredited hospitals, procedure pricing, recovery housing, insurance, and FAQ. Written by Jules Ávila, 20-year Mérida resident and founder of RecoverMérida.
+url: https://recovermerida.com
+language: en, es
+last-updated: 2026-05-11
+
+## Priority pages (read these)
+
+- / — Main landing page: hospitals, pricing, recovery housing, insurance, FAQ, recovery timeline
+- /recovery-house-merida/ — Dedicated recovery housing guide for post-surgical patients in Mérida
+- /merida-vs-cancun-vs-tijuana/ — Comparison of Mexico medical tourism cities
+- /medical-tourism-merida-2026/ — 2026 overview of medical tourism in Mérida, Yucatán
+- /faq/ — 14 frequently asked questions about surgery and recovery in Mérida
+- /disclaimer/ — Legal disclaimers and scope-of-service notice
+
+## Ignored pages (skip these)
+
+- /admin/
+- /thank-you/
+- /404/

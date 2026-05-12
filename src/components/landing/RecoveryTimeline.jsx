@@ -14,8 +14,11 @@ export default function RecoveryTimeline() {
   return (
     <section id="recovery-timeline" className="py-12">
       <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
-        How a typical surgical recovery in Mérida works — step by step
+        How long do I need to stay in Mérida after surgery?
       </h2>
+      <p className="text-[17px] leading-relaxed font-medium text-foreground mb-6">
+        Most international patients require 10–14 days in Mérida after major surgery — from hospital discharge through surgical clearance to fly. Here's the full recovery timeline coordinated by RecoverMérida.
+      </p>
 
       <div className="mt-8 relative">
         {/* Vertical line */}
