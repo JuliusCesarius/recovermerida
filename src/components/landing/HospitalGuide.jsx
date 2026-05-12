@@ -17,7 +17,7 @@ const HOSPITALS = [
   },
   {
     name: 'Faro del Mayab (CHRISTUS Muguerza)',
-    image: 'https://media.base44.com/images/public/6a0254f06a505803a56ab728/15325139f_generated_b35f57c2.png',
+    image: 'https://media.base44.com/images/public/6a0254f06a505803a56ab728/533dd8c85_CleanShot2026-05-12at31516.png',
     badges: ['JCI Accredited', 'Mayo Clinic Strategic Alliance'],
     badgeCites: [6, 7],
     distinction: 'Part of Mayo Clinic strategic alliance via Médica Sur Network.',
