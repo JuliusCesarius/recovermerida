@@ -38,14 +38,14 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 onClick={scrollToForm}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-base px-8 h-12 shadow-lg shadow-primary/20"
-              >
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-base px-8 h-12 shadow-lg shadow-primary/20">
+                
                 Get the free 2026 Surgery + Recovery Guide
               </Button>
               <a
                 href="#consult"
-                className="inline-flex items-center gap-1.5 text-primary font-medium text-sm hover:underline underline-offset-4 self-center"
-              >
+                className="inline-flex items-center gap-1.5 text-primary font-medium text-sm hover:underline underline-offset-4 self-center hidden">
+                
                 Book a free 15-min consult <ArrowRight className="w-4 h-4" />
               </a>
             </div>
@@ -57,8 +57,8 @@ export default function HeroSection() {
               <img
                 src="https://media.base44.com/images/public/6a0254f06a505803a56ab728/d322598d8_expatsinmerida.png"
                 alt="Expats enjoying Paseo de Montejo in Mérida, Yucatán — international patients relaxing in the city"
-                className="w-full h-80 object-cover"
-              />
+                className="w-full h-80 object-cover" />
+              
             </div>
           </div>
         </div>
@@ -67,25 +67,25 @@ export default function HeroSection() {
         <div className="mt-10 pt-6 border-t border-border flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
           <span>RecoverMerida Editorial · May 11, 2026 · 10 min read</span>
           <div className="flex items-center gap-2 ml-auto">
-            {['Facebook', 'X', 'LinkedIn', 'WhatsApp'].map((platform) => (
-              <button
-                key={platform}
-                className="w-8 h-8 rounded-full border border-border flex items-center justify-center hover:bg-muted transition-colors text-xs font-medium text-muted-foreground"
-                title={`Share on ${platform}`}
-              >
+            {['Facebook', 'X', 'LinkedIn', 'WhatsApp'].map((platform) =>
+            <button
+              key={platform}
+              className="w-8 h-8 rounded-full border border-border flex items-center justify-center hover:bg-muted transition-colors text-xs font-medium text-muted-foreground"
+              title={`Share on ${platform}`}>
+              
                 {platform[0]}
               </button>
-            ))}
+            )}
             <button
               className="w-8 h-8 rounded-full border border-border flex items-center justify-center hover:bg-muted transition-colors text-xs text-muted-foreground"
               title="Copy link"
-              onClick={() => navigator.clipboard.writeText(window.location.href)}
-            >
+              onClick={() => navigator.clipboard.writeText(window.location.href)}>
+              
               🔗
             </button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
