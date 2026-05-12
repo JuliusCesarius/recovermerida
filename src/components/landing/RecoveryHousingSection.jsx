@@ -98,7 +98,7 @@ export default function RecoveryHousingSection() {
         >
           <img
             src="https://media.base44.com/images/public/6a0254f06a505803a56ab728/8ff3e73a5_image.png"
-            alt="Recovery house Mérida — Casa Altabrisa, ground floor, pool, 3 bedrooms"
+            alt="Recovery apartment Mérida — bright open-plan living area with kitchenette"
             className="w-full sm:w-52 h-44 sm:h-auto object-cover shrink-0"
           />
           <div className="p-5 flex flex-col justify-between gap-3">
@@ -107,16 +107,16 @@ export default function RecoveryHousingSection() {
                 <span className="text-[10px] font-bold uppercase tracking-wider text-primary bg-primary/8 px-2 py-0.5 rounded">RecoverMérida Partner</span>
               </div>
               <h4 className="font-semibold text-foreground text-[15px] leading-snug group-hover:text-primary transition-colors">
-                Casa Altabrisa — Ground-floor recovery suite, private pool, 3 BR
+                Bright recovery apartment — Mérida, open-plan living + full kitchenette, A/C
               </h4>
               <p className="text-sm text-muted-foreground mt-1.5 leading-relaxed">
-                5 min from Star Médica. Ground floor, step-free entry, full kitchen, blackout curtains, A/C in every room. Hosts speak English and are experienced with post-op guests.
+                Modern, well-lit apartment with sofa bed, full kitchenette with fridge, microwave and coffee maker, dining area, ceiling fans and A/C throughout. Comfortable for solo patients or a patient + companion on short or extended recovery stays.
               </p>
             </div>
-            <div className="flex items-center gap-3 text-xs text-muted-foreground">
-              <span className="font-semibold text-primary">~$75 USD/night</span>
+            <div className="flex items-center gap-3 text-xs text-muted-foreground flex-wrap">
+              <span className="font-semibold text-primary">Mérida</span>
               <span>·</span>
-              <span>Altabrisa, Mérida</span>
+              <span>Full kitchen · A/C · Wi-Fi</span>
               <span>·</span>
               <span className="inline-flex items-center gap-1 text-primary font-medium">View on Airbnb <ExternalLink className="w-3 h-3" /></span>
             </div>
