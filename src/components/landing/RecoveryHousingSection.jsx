@@ -131,26 +131,29 @@ export default function RecoveryHousingSection() {
           className="flex flex-col sm:flex-row gap-0 border border-border rounded-xl overflow-hidden bg-card hover:border-primary/40 hover:shadow-md transition-all group"
         >
           <img
-            src="https://media.base44.com/images/public/6a0254f06a505803a56ab728/94d55b509_generated_image.png"
-            alt="Recovery apartment Mérida — modern open plan, high ceilings, 2 bedrooms"
+            src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6ODU2NzczMzA1OTY1ODI1ODE3/original/658cb3ce-6e1d-4ecc-a80e-a0d596968a78.jpeg?im_w=720"
+            alt="Studio apartment for recovery in north Mérida — open plan living area with kitchen"
             className="w-full sm:w-52 h-44 sm:h-auto object-cover shrink-0"
           />
           <div className="p-5 flex flex-col justify-between gap-3">
             <div>
               <div className="flex items-center gap-2 mb-1">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-primary bg-primary/8 px-2 py-0.5 rounded">RecoverMérida Partner</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded">⭐ 4.8 · Guest Favorite</span>
               </div>
               <h4 className="font-semibold text-foreground text-[15px] leading-snug group-hover:text-primary transition-colors">
-                Modern apartment — Temozón Norte, 2 BR, pool, elevator building
+                Studio apartment — North Mérida, up to 3 guests, fiber 200 Mbps, washer/dryer included
               </h4>
               <p className="text-sm text-muted-foreground mt-1.5 leading-relaxed">
-                Adjacent to Faro del Mayab (CHRISTUS Muguerza). Elevator access, private terrace, high-speed Wi-Fi for telehealth follow-ups. Ideal for longer 14–21 day orthopedic or bariatric stays.
+                Quiet residential neighborhood in north Mérida. Self check-in with keypad lock, full kitchen, in-unit washer/dryer, A/C, 200 Mbps fiber for telehealth follow-ups. Superhost Julio has 8 years of experience. Cleaning included. Ideal for solo patients on longer recovery stays.
               </p>
             </div>
-            <div className="flex items-center gap-3 text-xs text-muted-foreground">
-              <span className="font-semibold text-primary">~$65 USD/night</span>
+            <div className="flex items-center gap-3 text-xs text-muted-foreground flex-wrap">
+              <span className="font-semibold text-primary">15 reviews</span>
               <span>·</span>
-              <span>Temozón Norte, Mérida</span>
+              <span>North Mérida</span>
+              <span>·</span>
+              <span>3 guests · studio · 2 beds · 1 bath</span>
               <span>·</span>
               <span className="inline-flex items-center gap-1 text-primary font-medium">View on Airbnb <ExternalLink className="w-3 h-3" /></span>
             </div>
