@@ -43,7 +43,7 @@ export default function LeadCaptureForm() {
       procedure: form.procedure || 'Just exploring',
     };
     await base44.entities.Lead.create(leadData);
-    fetch('https://julesai.app.n8n.cloud/webhook-test/1766bbe0-97bc-407a-b3b7-799529ac2020', {
+    fetch('https://julesai.app.n8n.cloud/webhook/1766bbe0-97bc-407a-b3b7-799529ac2020', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(leadData),
