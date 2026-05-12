@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { base44 } from '@/api/base44Client';
 import { CheckCircle2, Loader2, Send } from 'lucide-react';
 
-const GUIDE_IMG = 'https://media.base44.com/images/public/6a0254f06a505803a56ab728/1e1203643_generated_223f3a73.png';
+const GUIDE_IMG = 'https://media.base44.com/images/public/6a0254f06a505803a56ab728/41cba0b8c_CleanShot2026-05-12at32228.png';
 
 const CONTENTS = [
   'Hospital accreditation comparison chart',
