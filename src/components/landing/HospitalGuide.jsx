@@ -6,7 +6,7 @@ import { Cite } from '@/components/landing/SourcesReference';
 const HOSPITALS = [
   {
     name: 'Star Médica Mérida',
-    image: 'https://media.base44.com/images/public/6a0254f06a505803a56ab728/8717e0cd5_generated_7831b697.png',
+    image: 'https://media.base44.com/images/public/6a0254f06a505803a56ab728/9bcb7555d_image.png',
     badges: ['JCI Accredited', 'Canadian Healthcare Council Level 3'],
     badgeCites: [null, 5],
     distinction: '"Mexico\'s Best Private Hospitals" #1 Southern Region (Expansión, 2025)',
