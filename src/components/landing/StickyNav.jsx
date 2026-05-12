@@ -21,9 +21,16 @@ export default function StickyNav() {
       } bg-white/95 backdrop-blur-md border-b border-border shadow-sm`}
     >
       <div className="max-w-[1100px] mx-auto px-6 h-14 flex items-center justify-between">
-        <span className="text-lg font-medium text-foreground tracking-tight">
-          Recover<span className="text-primary">Merida</span>
-        </span>
+        <div className="flex items-center gap-2">
+          <img
+            src="https://media.base44.com/images/public/6a0254f06a505803a56ab728/f32287a2b_RecoverMeridaIcon.png"
+            alt="RecoverMerida logo"
+            className="w-7 h-7 object-contain"
+          />
+          <span className="text-lg font-medium text-foreground tracking-tight">
+            Recover<span className="text-primary">Merida</span>
+          </span>
+        </div>
         <div className="hidden md:flex items-center gap-1 text-sm text-muted-foreground">
           <span className="px-2 py-1 rounded hover:bg-muted cursor-pointer font-medium text-foreground">EN</span>
           <span className="text-border">|</span>
