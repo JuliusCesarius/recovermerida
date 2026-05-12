@@ -36,12 +36,18 @@ export default function LeadCaptureForm() {
     }
 
     setSubmitting(true);
-    await base44.entities.Lead.create({
+    const leadData = {
       first_name: form.first_name,
       email: form.email,
       whatsapp: form.whatsapp,
       procedure: form.procedure || 'Just exploring',
-    });
+    };
+    await base44.entities.Lead.create(leadData);
+    fetch('https://julesai.app.n8n.cloud/webhook-test/1766bbe0-97bc-407a-b3b7-799529ac2020', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(leadData),
+    }).catch(() => {});
     setSubmitting(false);
     setSuccess(true);
   };
