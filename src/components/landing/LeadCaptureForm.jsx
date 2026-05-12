@@ -15,7 +15,7 @@ const CONTENTS = [
   'Insurance coverage checklist',
   'Recovery house details + photos',
   'Pre-travel preparation guide',
-  'Jules Ávila\'s direct WhatsApp line',
+  'WhatsApp support line — direct access',
 ];
 
 const PROCEDURES = ['Dental', 'Bariatric', 'Plastic', 'Orthopedic', 'Ophthalmology', 'Just exploring'];
