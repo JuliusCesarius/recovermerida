@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -42,6 +43,11 @@ export default function Footer() {
         <p className="text-xs text-muted-foreground leading-relaxed">
           RecoverMérida coordinates recovery logistics and does not provide medical diagnosis or treatment. All medical decisions should be made in consultation with qualified healthcare professionals. Procedure pricing is approximate and may vary by hospital and individual case.
         </p>
+        <div className="mt-4 text-xs">
+          <Link to="/terms" className="text-primary hover:underline underline-offset-2">
+            Terms and Conditions
+          </Link>
+        </div>
       </div>
     </footer>
   );
