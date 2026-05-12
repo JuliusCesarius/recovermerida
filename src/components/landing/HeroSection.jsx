@@ -42,12 +42,12 @@ export default function HeroSection() {
                 
                 Get the free 2026 Surgery + Recovery Guide
               </Button>
-              <a
-                href="#consult"
-                className="inline-flex items-center gap-1.5 text-primary font-medium text-sm hover:underline underline-offset-4 self-center hidden">
-                
-                Book a free 15-min consult <ArrowRight className="w-4 h-4" />
-              </a>
+              
+
+
+
+
+              
             </div>
           </div>
 
