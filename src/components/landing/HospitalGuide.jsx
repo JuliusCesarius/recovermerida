@@ -39,7 +39,7 @@ const HOSPITALS = [
   },
   {
     name: 'Centro Médico de Las Américas',
-    image: 'https://media.base44.com/images/public/6a0254f06a505803a56ab728/434611a1e_generated_1cabcbeb.png',
+    image: 'https://media.base44.com/images/public/6a0254f06a505803a56ab728/e50487525_CleanShot2026-05-12at31648.png',
     badges: ['Mercy Hospital Miami Associate'],
     badgeCites: [8],
     distinction: 'Maternity + specialist center. Associated with Mercy Hospital Miami.',
