@@ -97,7 +97,7 @@ export default function RecoveryHousingSection() {
           className="flex flex-col sm:flex-row gap-0 border border-border rounded-xl overflow-hidden bg-card hover:border-primary/40 hover:shadow-md transition-all group"
         >
           <img
-            src="https://media.base44.com/images/public/6a0254f06a505803a56ab728/c0195303f_generated_image.png"
+            src="https://media.base44.com/images/public/6a0254f06a505803a56ab728/8ff3e73a5_image.png"
             alt="Recovery house Mérida — Casa Altabrisa, ground floor, pool, 3 bedrooms"
             className="w-full sm:w-52 h-44 sm:h-auto object-cover shrink-0"
           />
