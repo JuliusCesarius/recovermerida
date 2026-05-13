@@ -265,7 +265,7 @@ export default function Landing() {
           </p>
 
           <img
-            src="https://media.base44.com/images/public/6a0254f06a505803a56ab728/1e1203643_generated_223f3a73.png"
+            src="https://media.base44.com/images/public/6a0254f06a505803a56ab728/d322598d8_expatsinmerida.png"
             alt="Mérida, Yucatán — medical tourism destination for snowbirds and expats"
             className="w-full rounded-xl object-cover"
             style={{ maxHeight: '400px' }}
