@@ -24,6 +24,7 @@ import SourcesReference, { Cite } from '@/components/landing/SourcesReference';
 import MethodologyBlock from '@/components/landing/MethodologyBlock';
 import Footer from '@/components/landing/Footer';
 import WhatsAppFloat from '@/components/landing/WhatsAppFloat';
+import JulesChat from '@/components/landing/JulesChat';
 import ScrollTracking from '@/components/landing/ScrollTracking';
 import { Loader2, CheckCircle2 } from 'lucide-react';
 
@@ -236,6 +237,7 @@ export default function Landing() {
       <StickyNav />
       <TableOfContents />
       <WhatsAppFloat />
+      <JulesChat />
 
       <main className="max-w-[780px] mx-auto px-6 pt-10 pb-20 prose-editorial">
 
