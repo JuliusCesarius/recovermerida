@@ -45,8 +45,8 @@ const HOSPITALS = [
     distinction: 'Maternity + specialist center. Associated with Mercy Hospital Miami.',
     address: 'Calle 54 365, near Paseo de Montejo',
     phone: '+52 999 926-2111',
-    website: 'merida.cmahospital.mx',
-    url: 'https://merida.cmahospital.mx',
+    website: 'cmahospital.mx',
+    url: 'https://cmahospital.mx',
   },
 ];
 

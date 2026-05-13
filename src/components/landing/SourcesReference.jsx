@@ -20,7 +20,7 @@ const SOURCES = [
   { n: 5, text: 'Canadian Healthcare Council', title: 'International Patient Safety Certification Directory', date: '2025', url: 'https://healthcarecan.ca', display: 'healthcarecan.ca' },
   { n: 6, text: 'Joint Commission International', title: 'JCI-Accredited Organizations', date: '2026', url: 'https://www.jointcommissioninternational.org/who-we-are/jci-accredited-organizations/', display: 'jointcommissioninternational.org' },
   { n: 7, text: 'Médica Sur Network', title: 'Strategic Alliance with Mayo Clinic', date: '2025', url: 'https://medicasur.com.mx', display: 'medicasur.com.mx' },
-  { n: 8, text: 'Centro Médico de Las Américas', title: 'Institutional Profile', date: '2025', url: 'https://merida.cmahospital.mx', display: 'merida.cmahospital.mx' },
+  { n: 8, text: 'Centro Médico de Las Américas', title: 'Institutional Profile', date: '2025', url: 'https://cmahospital.mx', display: 'cmahospital.mx' },
   { n: 9, text: 'Bookimed', title: 'Procedure Cost Data Mexico', date: 'May 2026', url: 'https://bookimed.com', display: 'bookimed.com' },
   { n: 10, text: 'Dentavacation', title: 'Dental Implants in Mérida Mexico', date: '2026', url: 'https://dentavacation.com', display: 'dentavacation.com' },
   { n: 11, text: 'Renew Bariatrics', title: 'Recovery Houses in Mexico', date: '2026', url: 'https://renewbariatrics.com', display: 'renewbariatrics.com' },
