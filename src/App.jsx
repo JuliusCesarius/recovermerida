@@ -7,6 +7,7 @@ import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import Landing from './pages/Landing.jsx';
 import TermsAndConditions from './pages/TermsAndConditions';
+import AdminJules from './pages/AdminJules';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -37,6 +38,7 @@ const AuthenticatedApp = () => {
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/terms" element={<TermsAndConditions />} />
+      <Route path="/admin/jules" element={<AdminJules />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
