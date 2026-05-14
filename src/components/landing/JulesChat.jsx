@@ -381,13 +381,19 @@ export default function JulesChat() {
           aria-label="Chat with Jules"
           onMouseEnter={() => setShowTooltip(true)}
           onMouseLeave={() => setShowTooltip(false)}
-          className={`relative w-14 h-14 rounded-full bg-primary text-white shadow-lg hover:bg-primary/90 transition-all duration-200 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
-            ${!open && !proactiveSent ? 'animate-pulse-slow' : ''}`}
+          className={`relative w-14 h-14 rounded-full overflow-hidden shadow-lg hover:scale-105 transition-all duration-200 flex items-center justify-center focus:outline-none
+            ${!open ? 'animate-glow' : ''}`}
         >
           {open ? (
-            <ChevronDown className="w-5 h-5" />
+            <div className="w-full h-full bg-primary flex items-center justify-center">
+              <ChevronDown className="w-5 h-5 text-white" />
+            </div>
           ) : (
-            <span className="text-lg font-bold select-none">J</span>
+            <img
+              src="https://media.base44.com/images/public/6a0254f06a505803a56ab728/ec70309a0_CleanShot2026-05-14at434462x.png"
+              alt="Chat with Jules"
+              className="w-full h-full object-cover object-top"
+            />
           )}
 
           {/* Unread badge */}
@@ -399,11 +405,11 @@ export default function JulesChat() {
 
       {/* Pulse keyframe */}
       <style>{`
-        @keyframes pulse-slow {
-          0%, 100% { box-shadow: 0 0 0 0 hsl(var(--primary) / 0.5); }
-          50% { box-shadow: 0 0 0 10px hsl(var(--primary) / 0); }
+        @keyframes glow {
+          0%, 100% { box-shadow: 0 0 8px 2px hsl(var(--primary) / 0.6), 0 0 20px 6px hsl(var(--primary) / 0.3); }
+          50% { box-shadow: 0 0 16px 6px hsl(var(--primary) / 0.9), 0 0 40px 14px hsl(var(--primary) / 0.5); }
         }
-        .animate-pulse-slow { animation: pulse-slow 2.5s ease-in-out 3; }
+        .animate-glow { animation: glow 2s ease-in-out infinite; }
       `}</style>
     </>
   );
