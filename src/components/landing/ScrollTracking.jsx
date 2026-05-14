@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 function fireGA4(eventName, params) {
   if (typeof window !== 'undefined' && window.dataLayer) {
