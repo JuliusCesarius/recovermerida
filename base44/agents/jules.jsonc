@@ -13,7 +13,7 @@
   "memory_config": {
     "enabled": true,
     "scope": "both",
-    "instructions": null
+    "instructions": "Save the following as USER memories (per individual):\n- The procedure(s) they are considering (e.g., \"dental implants\", \"bariatric surgery\")\n- Their approximate surgery timeline if mentioned (e.g., \"within 3 months\", \"next year\")\n- Their primary concern or question focus (e.g., cost, safety, recovery time, hospital choice)\n- Their location/origin country or city if mentioned (e.g., \"from Texas\", \"Canadian\")\n- Whether they have already chosen a surgeon or have a surgery date\n- Their preferred language (English or Spanish)\n- Their name and contact info if they share it\n- Any specific doctor or hospital they've mentioned or asked about\n\nSave the following as GLOBAL memories:\n- Any updates to pricing, hospital availability, or new services that Jules mentions during conversations\n- Frequently asked questions that do not yet have a good answer in the existing knowledge base\n- User feedback about responses that were unclear or incomplete\n\nDo NOT save:\n- Generic greetings or small talk\n- Information the user explicitly asks to be kept private\n- Any health/medical details beyond the procedure they are exploring"
   },
   "name": "jules"
 }
