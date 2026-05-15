@@ -2,66 +2,70 @@ import React, { useState, useEffect } from 'react';
 import { base44 } from '@/api/base44Client';
 import { Save, RefreshCw, BookOpen, Settings } from 'lucide-react';
 
-const FILES = [
+const TABS = [
   {
-    key: 'kb',
+    key: 'jules-kb',
     label: 'Knowledge Base',
     icon: BookOpen,
-    path: 'content/jules-kb.md',
     description: 'Facts, pricing, hospitals, services — what Jules knows.',
   },
   {
-    key: 'instructions',
+    key: 'jules-instructions',
     label: 'Agent Instructions',
     icon: Settings,
-    path: 'content/jules-instructions.md',
     description: 'Personality, tone, rules, and escalation logic.',
   },
 ];
 
-async function loadFile(path) {
-  const res = await base44.functions.invoke('getMarkdownFile', { path });
-  return res.data?.content || '';
-}
-
-async function saveFile(path, content) {
-  await base44.functions.invoke('saveMarkdownFile', { path, content });
-}
-
 export default function AdminJules() {
-  const [activeTab, setActiveTab] = useState('kb');
-  const [contents, setContents] = useState({ kb: '', instructions: '' });
-  const [loading, setLoading] = useState({ kb: false, instructions: false });
-  const [saving, setSaving] = useState({ kb: false, instructions: false });
-  const [saved, setSaved] = useState({ kb: false, instructions: false });
+  const [activeTab, setActiveTab] = useState('jules-kb');
+  const [contents, setContents] = useState({ 'jules-kb': '', 'jules-instructions': '' });
+  const [recordIds, setRecordIds] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
+  const [saved, setSaved] = useState(false);
   const [error, setError] = useState('');
 
   useEffect(() => {
-    FILES.forEach(({ key, path }) => {
-      setLoading(l => ({ ...l, [key]: true }));
-      loadFile(path)
-        .then(content => setContents(c => ({ ...c, [key]: content })))
-        .catch(() => setError(`Could not load ${path}`))
-        .finally(() => setLoading(l => ({ ...l, [key]: false })));
-    });
+    setLoading(true);
+    base44.entities.AgentConfig.filter({})
+      .then(records => {
+        const newContents = { ...contents };
+        const newIds = {};
+        records.forEach(r => {
+          if (r.key in newContents) {
+            newContents[r.key] = r.content;
+            newIds[r.key] = r.id;
+          }
+        });
+        setContents(newContents);
+        setRecordIds(newIds);
+      })
+      .catch(() => setError('Could not load configuration from database.'))
+      .finally(() => setLoading(false));
   }, []);
 
-  const handleSave = async (key) => {
-    const file = FILES.find(f => f.key === key);
-    setSaving(s => ({ ...s, [key]: true }));
+  const handleSave = async () => {
+    setSaving(true);
     setError('');
     try {
-      await saveFile(file.path, contents[key]);
-      setSaved(s => ({ ...s, [key]: true }));
-      setTimeout(() => setSaved(s => ({ ...s, [key]: false })), 2500);
+      const existingId = recordIds[activeTab];
+      if (existingId) {
+        await base44.entities.AgentConfig.update(existingId, { content: contents[activeTab] });
+      } else {
+        const record = await base44.entities.AgentConfig.create({ key: activeTab, content: contents[activeTab] });
+        setRecordIds(ids => ({ ...ids, [activeTab]: record.id }));
+      }
+      setSaved(true);
+      setTimeout(() => setSaved(false), 2500);
     } catch {
-      setError('Save failed. Check that the backend function is deployed.');
+      setError('Save failed. Please try again.');
     } finally {
-      setSaving(s => ({ ...s, [key]: false }));
+      setSaving(false);
     }
   };
 
-  const activeFile = FILES.find(f => f.key === activeTab);
+  const activeTab_ = TABS.find(t => t.key === activeTab);
 
   return (
     <div className="min-h-screen bg-background">
@@ -81,7 +85,7 @@ export default function AdminJules() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Tabs */}
         <div className="flex gap-2 mb-6">
-          {FILES.map(({ key, label, icon: Icon }) => (
+          {TABS.map(({ key, label, icon: Icon }) => (
             <button
               key={key}
               onClick={() => setActiveTab(key)}
@@ -101,24 +105,18 @@ export default function AdminJules() {
         <div className="bg-white border border-border rounded-xl overflow-hidden shadow-sm">
           <div className="px-5 py-4 border-b border-border flex items-center justify-between">
             <div>
-              <p className="text-sm font-semibold text-foreground">{activeFile.label}</p>
-              <p className="text-xs text-muted-foreground mt-0.5">{activeFile.description}</p>
+              <p className="text-sm font-semibold text-foreground">{activeTab_.label}</p>
+              <p className="text-xs text-muted-foreground mt-0.5">{activeTab_.description}</p>
             </div>
             <div className="flex items-center gap-2">
-              {loading[activeTab] && (
-                <RefreshCw className="w-4 h-4 text-muted-foreground animate-spin" />
-              )}
+              {loading && <RefreshCw className="w-4 h-4 text-muted-foreground animate-spin" />}
               <button
-                onClick={() => handleSave(activeTab)}
-                disabled={saving[activeTab] || loading[activeTab]}
+                onClick={handleSave}
+                disabled={saving || loading}
                 className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-semibold text-white bg-primary hover:bg-primary/90 disabled:opacity-50 transition-colors"
               >
-                {saving[activeTab] ? (
-                  <RefreshCw className="w-3.5 h-3.5 animate-spin" />
-                ) : (
-                  <Save className="w-3.5 h-3.5" />
-                )}
-                {saved[activeTab] ? 'Saved!' : 'Save'}
+                {saving ? <RefreshCw className="w-3.5 h-3.5 animate-spin" /> : <Save className="w-3.5 h-3.5" />}
+                {saved ? 'Saved!' : 'Save'}
               </button>
             </div>
           </div>
@@ -132,15 +130,15 @@ export default function AdminJules() {
           <textarea
             value={contents[activeTab]}
             onChange={e => setContents(c => ({ ...c, [activeTab]: e.target.value }))}
-            disabled={loading[activeTab]}
+            disabled={loading}
             spellCheck={false}
             className="w-full h-[60vh] px-5 py-4 text-sm font-mono text-foreground bg-white resize-none focus:outline-none disabled:opacity-50"
-            placeholder={loading[activeTab] ? 'Loading...' : 'Start typing...'}
+            placeholder={loading ? 'Loading...' : 'Start typing...'}
           />
         </div>
 
         <p className="text-xs text-muted-foreground mt-3 text-center">
-          File: <code className="font-mono">{activeFile.path}</code>
+          Stored in database as key: <code className="font-mono">{activeTab}</code>
         </p>
       </div>
     </div>
