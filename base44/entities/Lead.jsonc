@@ -36,6 +36,11 @@
         "converted"
       ],
       "default": "new"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 1000,
+      "description": "Optional notes or details about this lead"
     }
   },
   "required": [
