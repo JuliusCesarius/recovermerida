@@ -8,6 +8,8 @@ import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import Landing from './pages/Landing.jsx';
 import TermsAndConditions from './pages/TermsAndConditions';
 import AdminJules from './pages/AdminJules';
+import About from './pages/About';
+import Contact from './pages/Contact';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -39,6 +41,8 @@ const AuthenticatedApp = () => {
       <Route path="/" element={<Landing />} />
       <Route path="/terms" element={<TermsAndConditions />} />
       <Route path="/admin/jules" element={<AdminJules />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

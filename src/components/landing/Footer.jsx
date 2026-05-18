@@ -43,10 +43,10 @@ export default function Footer() {
         <p className="text-xs text-muted-foreground leading-relaxed">
           RecoverMérida coordinates recovery logistics and does not provide medical diagnosis or treatment. All medical decisions should be made in consultation with qualified healthcare professionals. Procedure pricing is approximate and may vary by hospital and individual case.
         </p>
-        <div className="mt-4 text-xs">
-          <Link to="/terms" className="text-primary hover:underline underline-offset-2">
-            Terms and Conditions
-          </Link>
+        <div className="mt-4 flex flex-wrap gap-4 text-xs">
+          <Link to="/terms" className="text-primary hover:underline underline-offset-2">Terms and Conditions</Link>
+          <Link to="/about" className="text-primary hover:underline underline-offset-2">About</Link>
+          <Link to="/contact" className="text-primary hover:underline underline-offset-2">Contact</Link>
         </div>
       </div>
     </footer>
